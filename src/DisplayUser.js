@@ -5,7 +5,7 @@ const DisplayUser = () => {
   const [list, setList] = useState([]);
   const getData = async () => {
     try {
-      const resp = await fetch("http://localhost:5000/get");
+      const resp = await fetch("https://studentform-be.onrender.com/get");
       const data = await resp.json();
       setList(data);
     } catch (error) {

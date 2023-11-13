@@ -12,7 +12,7 @@ const AddUser = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const resp = await fetch("http://localhost:5000/add", {
+      const resp = await fetch("https://studentform-be.onrender.com/add", {
         method: "POST",
         body: JSON.stringify(user),
         headers: { "content-type": "application/json" },
